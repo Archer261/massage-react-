@@ -50,10 +50,10 @@ const Services = () => {
 
             <div style={{ marginTop: '15px' }}> */}
                 <div className='service-cont'>
-                    <ServiceCard cover={img1} head={'Relaxation Body Massage/Light Medium Pressure'} />
+                    <ServiceCard cover={img2} head={'Relaxation Body Massage/Light Medium Pressure'} />
                     <ServiceCard cover={img2} head={'Deep Tissue Massage Deeper Pressure'} />
                     <ServiceCard cover={img3} head={'Therapeutic Massage'} />
-                    <ServiceCard cover={img3} head={'Therapeutic Massage'} />
+                    <ServiceCard cover={img3} head={'Therapeutic Massage'} desc={'This is a tests for the desc'} />
                     {/* <ServiceCard cover={img3} head={'Therapeutic Massage'} />
                     <ServiceCard cover={img3} head={'Therapeutic Massage'} />
                     <ServiceCard cover={img3} head={'Therapeutic Massage'} />

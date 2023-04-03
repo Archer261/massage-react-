@@ -120,6 +120,10 @@
     width: 45px;
 }
 
+.bold {
+    font-weight: bolder;
+}
+
 @media screen and (min-width: 2000px) {
 
     .custom__button,

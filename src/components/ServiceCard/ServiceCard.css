@@ -1,47 +1,72 @@
-figure {
-    width: 30rem;
-    aspect-ratio: 8 / 5;
-    --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
-    --accent: hsl(280 80% 40%);
-    transition: background 0.2s;
-    background:
-        radial-gradient(circle at top left, var(--accent), transparent 75%),
-        var(--bg);
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    border-radius: 1.5rem;
-}
-
-figure:after {
-    content: "";
-    position: absolute;
-    width: 20%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    bottom: 0%;
-    left: 10%;
-    background: linear-gradient(-65deg, var(--bg) 50%, var(--accent) 50%);
-    filter: blur(25px);
-    transform:
-        translateX(calc(var(--hover) * 15%)) scale(calc(1 + (var(--hover) * 0.2)));
-    transition: transform 0.2s, background 0.2s;
-}
-
-.service-img {
-    position: absolute;
-    left: 20%;
-    top: 15%;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* overflow: hidden; */
+    margin-bottom: 20px;
     width: 100%;
-    transform:
-        translateX(calc(var(--hover) * -15%)) scale(calc(1 + (var(--hover) * 0.2)));
-    transition: transform 0.2s;
 }
 
-.service-card {
-    --hover: 0;
+.card img {
+    position: relative;
+    top: 0;
+    left: 2.5%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.service-card:hover {
-    --hover: 1;
+.card-content {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.card-content h2 {
+    font-family: var(--font-base);
+    font-size: 1rem;
+    color: var(--color-golden);
+
+    margin: 2rem 1rem;
+    padding: 0 2rem;
+}
+
+.card-content p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-content button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
+    .card-content {
+        width: 50%;
+        padding: 40px;
+    }
 }

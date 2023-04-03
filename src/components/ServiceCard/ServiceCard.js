@@ -1,12 +1,17 @@
 import React from 'react'
 
+import './ServiceCard.css'
+
 const ServiceCard = (props) => {
     return (
         <>
-            <div className='service-card'>
-                <figure><img className='service-img' src={props.cover} alt="" /></figure>
-                <h2 className='p__opensans'>{props.head}</h2>
-                <p></p>
+            <div class="card">
+                <img src={props.cover} alt="Placeholder Image" />
+                <div class="card-content">
+                    <h2>{props.head}</h2>
+                    <p>{props.desc}</p>
+                    {/* <button className='custom__button'>Read More</button> */}
+                </div>
             </div>
         </>
     )

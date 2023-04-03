@@ -31,9 +31,11 @@ const About = () => {
           </h1>
           <img src={images.massage} alt="massage" className='massage__img' />
           <p className='p__opensans'>
-            One block North of 23 Mile,
+            We're located in <span className='bold'>Shelby Twp</span>
             <br />
-            off of Van Dyke road.
+            One block North of <span className='bold'>23 Mile</span>,
+            <br />
+            off of <span className='bold'>Van Dyke</span> road.
           </p>
           <img style={{ width: '60%', height: 'auto', borderRadius: '15%', alignSelf: 'center' }} src={images.site} />
 
