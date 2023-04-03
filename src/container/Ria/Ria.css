@@ -1,0 +1,31 @@
+.app__ria-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    max-height: 30rem;
+    overflow-y: scroll;
+}
+
+.app__ria__bg {
+    background: url('../../assets/riaArticle.png');
+    background-size: cover;
+}
+
+.app__ria-content_quote {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.app__ria-content_quote img {
+    width: 47px;
+    height: auto;
+    margin: 0 1rem 1rem 0;
+}
+
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 450px) {}
+
+@media screen and (max-width: 1150px) {}

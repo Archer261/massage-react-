@@ -1,0 +1,184 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+
+    padding: 1rem 2rem;
+}
+
+.p_opensans {
+    font-family: var(--font-base);
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-logo img {
+    width: 120px;
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    font-family: var(--font-base);
+    font-size: 2rem;
+
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey)
+}
+
+.app__navbar-call {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__navbar-call a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.app__navbar-call a:hover {
+    border-bottom: 1px solid var(--color-golden)
+}
+
+.app__navbar-call img {
+    max-width: 80px;
+}
+
+.app__navbar-call div {
+    width: 1px;
+    height: 30px;
+    background-color: var(--color-grey);
+}
+
+.app__navbar-smallscreen {
+    display: none;
+
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+    list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white);
+
+}
+
+.book_appointment-btn {
+    font-family: var(--font-base);
+    color: var(--color-black);
+    background: var(--color-golden);
+    border-radius: 5%;
+    box-shadow: var(--color-golden);
+    margin: 10px;
+    height: auto;
+    width: 12rem;
+    transform: scale(1);
+
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 24px;
+    padding: 1rem;
+
+    animation: pulse-btn 2s infinite;
+}
+
+@keyframes pulse-btn {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgb(168, 43, 125);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .app__navbar-logo img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+
+    .app__navbar-call {
+        display: none;
+    }
+
+    .app__navbar-logo img {
+        width: 110px;
+    }
+}

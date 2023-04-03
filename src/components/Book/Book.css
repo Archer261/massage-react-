@@ -1,0 +1,46 @@
+.book-btn-wrapper {
+    float: right;
+}
+
+.book-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    font-family: var(--font-base);
+    color: var(--color-black);
+    background: var(--color-golden);
+    box-shadow: var(--color-golden);
+    margin: 10px;
+    transform: scale(1);
+
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 24px;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+
+    /* transform: translateX(-50%); */
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    animation: pulse-btn 2s infinite;
+    z-index: 50;
+}
+
+.book-btn.visible {
+    opacity: 1;
+}
+
+.book-btn.hidden {
+    display: none;
+}
+
+.book-btn:hover {
+    transform: scale(1.1);
+}
