@@ -7,9 +7,9 @@ import './Ria.css'
 
 const Ria = () => {
   return (
-    <div className='app__bg app__wrapper section__padding app__ria__bg'>
-      <div className='app__wrapper_img app__wrapper_img-reverse'>
-        <img src={images.riaPhoto} alt='ria photo' style={{ width: '100%', height: 'auto', borderRadius: '5%' }} />
+    <div className='app__wrapper section__padding app__ria__bg'>
+      <div className='app__wrapper_img app__wrapper_img-ria'>
+        {/* <img src={images.riaPhoto} alt='ria photo' style={{ width: '70%', height: 'auto', borderRadius: '5%' }} /> */}
       </div>
       <div className='app__wrapper_info'>
         <SubHeading title="Ria's Touch - Humble Beginnings" dark={true} />

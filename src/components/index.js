@@ -7,7 +7,8 @@ import NavBar from './NavBar/Navbar'
 import ServiceCard from './ServiceCard/ServiceCard'
 import GoogleMap from './GoogleMap'
 import ImageModal from './ImageModal/ImageModal'
+import ContactForm from './ContactForm/ContactForm'
 
 export {
-    SubHeading, ServiceItem, ServicePack, FooterOverlay, Book, NavBar, ServiceCard, GoogleMap, ImageModal
+    SubHeading, ServiceItem, ServicePack, FooterOverlay, Book, NavBar, ServiceCard, GoogleMap, ImageModal, ContactForm
 }

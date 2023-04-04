@@ -31,11 +31,13 @@ const About = () => {
           </h1>
           <img src={images.massage} alt="massage" className='massage__img' />
           <p className='p__opensans'>
-            We're located in <span className='bold'>Shelby Twp</span>
+            We're located in <span className='bold'>Shelby Twp, MI</span>
             <br />
-            One block North of <span className='bold'>23 Mile</span>,
-            <br />
+            One block north of <span className='bold'>23 Mile</span>,
+            {/* <br /> */}
             off of <span className='bold'>Van Dyke</span> road.
+            <br />
+            <span className='bold'>Lower level</span> of the Shelby Business Center building.
           </p>
           <img style={{ width: '60%', height: 'auto', borderRadius: '15%', alignSelf: 'center' }} src={images.site} />
 

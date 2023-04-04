@@ -9,8 +9,14 @@
 
 .app__ria__bg {
     background: url('../../assets/riaArticle.png');
-    background-size: cover;
+    background-size: contain;
+    /* background: #ffd9e6; */
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 .app__ria-content_quote {
     display: flex;
@@ -22,6 +28,11 @@
     width: 47px;
     height: auto;
     margin: 0 1rem 1rem 0;
+}
+
+.app__wrapper_img-ria {
+    justify-content: center;
+    margin-right: 2rem;
 }
 
 @media screen and (max-width: 2000px) {}

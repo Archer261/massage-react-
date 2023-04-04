@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SubHeading, GoogleMap } from '../../components'
+import { SubHeading, GoogleMap, ContactForm } from '../../components'
 import { images } from '../../constants'
 
 import './Find.css'
@@ -8,6 +8,9 @@ import './Find.css'
 const Find = () => {
   return (
     <div className='app__bg app__wrapper section__padding' id='contact'>
+      <div className='find__contactForm-wrapper'>
+        <ContactForm />
+      </div>
       <div className='find__wrapper_info'>
         <SubHeading title="Contact" dark={true} />
         <h1 className='headtext__cormorant_dark' style={{ marginBotton: '3rem' }}>How to Find Us</h1>
@@ -25,9 +28,9 @@ const Find = () => {
           <p className='p__opensans_dark'>Fri 9:30 am - 6:00 pm</p>
           <p className='p__opensans_dark'>Sat 9:30 am - 3:00 pm</p>
         </div>
-        <button className='custom__button' style={{ marginTop: '2rem' }}>Visit Us</button>
+        {/* <button className='custom__button' style={{ marginTop: '2rem' }}>Visit Us</button> */}
       </div>
-      <div className='app__wrapper_img'>
+      <div className='app__wrapper_googleMap'>
         <GoogleMap />
 
       </div>

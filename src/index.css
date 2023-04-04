@@ -10,6 +10,9 @@
     --color-crimson: #412566;
     --color-grey: #a82b7d;
     --color-white: #a82b7d;
+    --white-color: #FFF;
+    --scroll-bar-color: #c5c5c5;
+    --scroll-bar-bg-color: #f6f6f6;
 }
 
 * {
@@ -17,6 +20,16 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+    border: 3px solid var(--scroll-bar-bg-color);
 }
 
 a {
